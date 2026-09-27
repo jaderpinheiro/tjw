@@ -1,0 +1,53 @@
+# TJW Consultoria Projetos e Serviços
+
+> Empresa de engenharia consultiva com foco em infraestrutura de transportes, nos modais ferroviário e rodoviário: elaboração de projetos complexos, supervisão de obras e consultoria estratégica para concessões. Sede em Goiânia-GO, Brasil.
+
+Fonte dos dados: Relatório de Portfólio Técnico da empresa, 20 de julho de 2026.
+
+## Identificação
+- Razão social: TJW Consultoria Projetos e Serviços Eireli - ME
+- CNPJ: 18.365.763/0001-00
+- Sede: Rua 07, n. 530, Quadra F-3, Lotes 37/39, Sala 105, Setor Oeste, Goiânia - GO, CEP 74.110-130
+- Ramo: consultoria, projetos e serviços de engenharia multidisciplinar
+- Sócio administrador: José Tadeu Vieira da Cunha (in memoriam), responsável pela direção técnica
+- Administração atual: Luciana Luiza de Araujo (inventariante)
+- Site: https://www.tjwconsultoria.com.br/
+
+## Capacidades técnicas
+- Engenharia Ferroviária: projetos básicos e executivos, estudos de traçado e superestrutura
+- Engenharia Rodoviária: supervisão de obras de implantação, restauração e manutenção de malhas estaduais
+- Consultoria Estratégica: transição de concessões e due diligence técnica
+- Estudos Multidisciplinares: levantamentos geológicos, geotécnicos, hidrológicos e ambientais
+- Gestão Social: reassentamento populacional e gestão fundiária
+- Liderança de Consórcios: gestão administrativa e técnica de grupos de empresas
+
+## Modelos de atuação
+- 2021–2023: sócia participante (70% de participação) em Sociedades em Conta de Participação (SCP) com a ENEFER Consultoria Projetos Ltda. (sócia ostensiva)
+- A partir de 2023: empresa líder de consórcios contratados pela GOINFRA (Consórcio Supervisor GO; Consórcio TJW-CAVA)
+
+## Portfólio (11 contratos, R$ 270,5 milhões, em ordem cronológica)
+Por ano de assinatura: 2021 R$ 19,5 mi (4 contratos) · 2022 R$ 23,9 mi (3) · 2023 R$ 127,0 mi (2) · 2024 R$ 100,1 mi (2).
+Por modal: ferroviário R$ 39,8 mi (6) · rodoviário R$ 109,3 mi (4) · outros R$ 121,4 mi (1).
+- SCP 01/2021 — FCA — Projeto Básico da FIOL, Lote 09FB e 8FA, Barreiras/BA a Arraias/TO (100 km) — R$ 2.990.019,74 — 210 dias
+- SCP 02/2021 — FCA — Projeto PETRA Pacote 4, Trem de Passageiros (Brasília a Valparaíso, Solução Barra Mansa, Trem Turístico Angra/RJ a Lídice/RJ) — R$ 2.390.868,00 — 150 dias
+- SCP 03/2021 — GOINFRA — Supervisão da manutenção da malha rodoviária de Goiás, Lote 09 — R$ 3.720.000,00 — 36 meses
+- SCP 04/2021 — BAMIN — Consultoria para transição da concessão FIOL (VALEC para SPE) — R$ 10.442.065,63 — 120 dias
+- SCP 01/2022 — BAMIN — Gerenciamento, fiscalização e revisão de projetos executivos da FIOL I — R$ 8.098.922,28 — 07 meses
+- SCP 02/2022 — BAMIN — Assessoria técnica continuada, FIOL I — R$ 8.985.861,14 — 17 meses
+- SCP 03/2022 — Consórcio TT FIOL Lote 6F-A — Projetos básico, executivo e as-built em São Félix do Coribe/BA — R$ 6.860.906,43 — 39 meses
+- Contrato 003/23 — SEINF/RR — Revitalização Parque Anauá (consórcio) — R$ 121.408.520,34 — 730 dias
+- Contrato 96/23 — GOINFRA — Projetos Executivos Lote 03 (líder) — R$ 5.550.000,00 — 24 meses
+- Contrato 92/2024 — GOINFRA — Supervisão regional, Lote 02 (TJW líder, Consórcio TJW-CAVA) — R$ 28.633.148,64 — 24 meses
+- Contrato 112/2024 — GOINFRA — Supervisão de obras, Lote 03, Plano de Obras 2023/2026 (TJW líder, Consórcio Supervisor GO) — R$ 71.443.715,38 — 48 meses
+
+## Clientes e parceiros
+- Clientes: Ferrovia Centro Atlântica S.A. (FCA), Bahia Mineração S.A. (BAMIN), Agência Goiana de Infraestrutura e Transportes (GOINFRA), Consórcio TT FIOL Lote 6F-A, SEINF/RR
+- Parcerias: CAVA, EULER, COEMA; parceira histórica ENEFER
+
+## Onde atua
+Goiás (sede), Bahia, Tocantins, Distrito Federal, Rio de Janeiro e Roraima.
+
+## Páginas
+- [Início](https://www.tjwconsultoria.com.br/): apresentação, capacidades, portfólio, atuação e contato
+- [Portfólio técnico](https://www.tjwconsultoria.com.br/portfolio/): os 11 contratos em ordem cronológica, com ficha completa, evolução por ano, modal e modelo de atuação, registros reais de campo e quadro resumo
+- [Registros de campo](https://www.tjwconsultoria.com.br/campo/): fotos e vídeos reais de obras rodoviárias em Goiás (GO-330, GO-338, GO-460)

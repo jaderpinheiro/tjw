@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.tjwconsultoria.com.br/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image><image:loc>https://www.tjwconsultoria.com.br/assets/img/og/tjw-consultoria-og.jpg</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tjwconsultoria.com.br/portfolio/</loc>
+    <lastmod>2026-09-27</lastmod>
+    <image:image><image:loc>https://www.tjwconsultoria.com.br/assets/img/campo/go-460-corte-em-rocha-panorama-1408.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tjwconsultoria.com.br/assets/img/campo/go-460-concretagem-de-laje-1101.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.tjwconsultoria.com.br/assets/img/campo/go-330-sonda-rotativa-corpo-de-prova-1280.webp</image:loc></image:image>
+  </url>
+  <url>
+    <loc>https://www.tjwconsultoria.com.br/campo/</loc>
+    <lastmod>2026-09-27</lastmod>
+  </url>
+</urlset>

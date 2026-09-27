@@ -1,0 +1,22 @@
+{
+  "name": "TJW Consultoria · Projetos · Serviços",
+  "short_name": "TJW",
+  "description": "Engenharia consultiva em infraestrutura de transportes: ferrovias, rodovias e consultoria para concessões.",
+  "lang": "pt-BR",
+  "start_url": "https://www.tjwconsultoria.com.br/",
+  "display": "browser",
+  "background_color": "#020d24",
+  "theme_color": "#03183d",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
