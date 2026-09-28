@@ -10,16 +10,15 @@
   const $$ = (s, c) => Array.prototype.slice.call((c || document).querySelectorAll(s));
   const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const hasGSAP = typeof window.gsap !== 'undefined' && typeof window.ScrollTrigger !== 'undefined';
-  const brl = (v) => v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
   // ---------------------------------------------------------------------------
-  // Contratos: filtro por modal e ordenação (cronológica ou por valor)
+  // Contratos: filtro por modal e ordenação (cronológica ou mais recentes)
   // ---------------------------------------------------------------------------
   const lista = $('[data-casos]');
   const ctrl = $('[data-casos-ctrl]');
   if (lista && ctrl) {
     const casos = $$('.caso', lista);
-    const nEl = $('[data-casos-n]', ctrl), totEl = $('[data-casos-total]', ctrl);
+    const nEl = $('[data-casos-n]', ctrl);
     let filtro = 'todos', ordem = 'ordem';
 
     function alternar() {
@@ -28,17 +27,16 @@
     function aplicar() {
       const antes = new Map(casos.map((c) => [c, c.getBoundingClientRect().top]));
       casos.slice()
-        .sort((a, b) => ordem === 'valor' ? (+b.dataset.valor - +a.dataset.valor) : (+a.dataset.ordem - +b.dataset.ordem))
+        .sort((a, b) => ordem === 'recentes' ? (+b.dataset.ordem - +a.dataset.ordem) : (+a.dataset.ordem - +b.dataset.ordem))
         .forEach((c) => lista.appendChild(c));
-      let soma = 0, n = 0;
+      let n = 0;
       casos.forEach((c) => {
         const ok = filtro === 'todos' || c.dataset.modal === filtro;
         c.hidden = !ok;
-        if (ok) { soma += Math.round(+c.dataset.valor * 100); n++; }
+        if (ok) n++;
       });
       alternar();
       nEl.textContent = n + (n === 1 ? ' contrato' : ' contratos');
-      totEl.textContent = filtro === 'todos' ? 'R$ 270,5 milhões' : 'R$ ' + brl(soma / 100);
       if (hasGSAP && !reduced) {
         casos.forEach((c) => {
           if (c.hidden) return;
@@ -132,8 +130,7 @@
       const vis = $('.caso__visual', c), img = $('img', vis);
       const tl = gsap.timeline({ scrollTrigger: { trigger: c, start: 'top 80%', once: true } });
       tl.fromTo(vis, { clipPath: 'inset(12% 12% 12% 12%)', opacity: 0.4 }, { clipPath: 'inset(0% 0% 0% 0%)', opacity: 1, duration: 1.3, ease: 'expo.out', clearProps: 'clipPath' })
-        .from($$('.caso__cod, h3, .caso__tags, .caso__valor', c), { opacity: 0, y: 24, duration: 1, ease: 'expo.out', stagger: 0.07 }, 0.15)
-        .from($('.caso__barra i', c), { scaleX: 0, duration: 1.4, ease: 'expo.out' }, 0.45)
+        .from($$('.caso__cod, h3, .caso__tags', c), { opacity: 0, y: 24, duration: 1, ease: 'expo.out', stagger: 0.07 }, 0.15)
         .from($$('.caso__ficha > div', c), { opacity: 0, x: 18, duration: 0.8, ease: 'expo.out', stagger: 0.05 }, 0.4);
       if (img) gsap.fromTo(img, { yPercent: -6, scale: 1.14 }, { yPercent: 6, scale: 1.04, ease: 'none', scrollTrigger: { trigger: c, start: 'top bottom', end: 'bottom top', scrub: true } });
     });

@@ -39,7 +39,6 @@
     });
   }
 
-  const fmtBRL = (v) => v.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
 
   // ---------------------------------------------------------------------------
   // Scroll suave (Lenis) sincronizado com GSAP/ScrollTrigger — instância única
@@ -148,17 +147,15 @@
   if (pf) {
     const list = $('.pf__lista', pf);
     const rows = $$('.pf__row', list);
-    const total = $('[data-pf-total]', pf);
     const count = $('[data-pf-count]', pf);
     const det = $('.pf__detalhe', pf);
-    let order = 'valor', filter = 'todos';
+    let order = 'recentes', filter = 'todos';
     function apply() {
       const first = new Map(rows.map((r) => [r, r.getBoundingClientRect().top]));
-      const sorted = rows.slice().sort((a, b) => order === 'valor' ? (+b.dataset.valor - +a.dataset.valor) : (+a.dataset.ordem - +b.dataset.ordem));
+      const sorted = rows.slice().sort((a, b) => order === 'recentes' ? (+b.dataset.ordem - +a.dataset.ordem) : (+a.dataset.ordem - +b.dataset.ordem));
       sorted.forEach((r) => list.appendChild(r.parentElement));
-      let sum = 0, n = 0;
-      rows.forEach((r) => { const show = filter === 'todos' || r.dataset.modal === filter; r.parentElement.hidden = !show; if (show) { sum += Math.round(+r.dataset.valor * 100); n++; } });
-      if (total) total.textContent = filter === 'todos' ? 'R$ 270,5 milhões' : 'R$ ' + fmtBRL(sum / 100); // total geral conforme relatório
+      let n = 0;
+      rows.forEach((r) => { const show = filter === 'todos' || r.dataset.modal === filter; r.parentElement.hidden = !show; if (show) n++; });
       if (count) count.textContent = n + (n === 1 ? ' contrato' : ' contratos');
       if (!reduced && hasGSAP) rows.forEach((r) => { if (r.parentElement.hidden) return; const d = first.get(r) - r.getBoundingClientRect().top; if (d) gsap.fromTo(r, { y: d }, { y: 0, duration: 0.7, ease: 'expo.out' }); });
       if (hasGSAP) ScrollTrigger.refresh();
@@ -176,7 +173,6 @@
       $('[data-d="titulo"]', det).textContent = r.dataset.titulo;
       $('[data-d="cliente"]', det).textContent = r.dataset.cliente;
       $('[data-d="objeto"]', det).textContent = r.dataset.objeto;
-      $('[data-d="valor"]', det).textContent = 'R$ ' + fmtBRL(+r.dataset.valor);
       $('[data-d="prazo"]', det).textContent = r.dataset.prazo + ' · ' + r.dataset.modelo;
       if (hasGSAP && !reduced) gsap.fromTo($$('dd,h3', det), { opacity: 0.35 }, { opacity: 1, duration: 0.35, stagger: 0.03 });
     }
